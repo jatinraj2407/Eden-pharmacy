@@ -44,7 +44,7 @@ Ensure you have the following installed:
 ## **Deployment**
 The project is deployed on **Netlify**. You can access it at:
 
-[Deployed Link](#)
+[[Deployed Link](https://eden-pharmacyy.netlify.app/)](#)
 
 ## **Folder Structure**
 ```
