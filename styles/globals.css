@@ -1,21 +1,125 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.header {
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none; /* Remove bullet points */
+  display: flex;    /* Use flexbox for layout */
+  gap: 20px;        /* Add spacing between items */
+  padding: 0;       /* Remove default padding */
+  margin: 0;        /* Remove default margin */
+}
+
+.nav-list li a {
+  text-decoration: none; /* Remove underline */
+  color: black;          /* Change text color */
+}
+
+.nav-list li a:hover {
+  color: #4caf50; /* Add hover effect */
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background-image: url('https://img.freepik.com/premium-photo/medicine-hd-image-healthcare-hd-image-pharmacy-hd-image-medical-stock-photo_1012565-25073.jpg?w=1380');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: white;
+}
+
+.hero > div {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+  color: black; /* Text color set to black */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow for a subtle lift effect */
+}
+
+.hero h1 {
+  margin: 0; /* Remove default margin */
+  font-size: 2.5rem; /* Adjust heading size */
+}
+
+.hero p {
+  font-size: 1.2rem; /* Adjust paragraph size */
+}
+
+.hero button {
+  margin-top: 10px; /* Adds space between the text and button */
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #45a049;
+}
+
+/* Mobile-first design */
+.hero {
+  padding: 20px;
+  font-size: 1rem; /* Smaller text on mobile */
+}
+
+/* For tablets and larger screens */
+@media (min-width: 600px) {
+  .hero {
+    padding: 40px;
+    font-size: 1.5rem; /* Larger text on tablet and up */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* For large screens like desktops */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 60px;
+    font-size: 2rem; /* Even larger text on desktops */
+  }
+}
+
+.features {
+  padding: 20px;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.feature {
+  flex: 1 1 300px;
+  margin: 10px;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #4caf50;
+  color: white;
 }
