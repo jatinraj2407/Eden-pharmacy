@@ -22,18 +22,10 @@ Ensure you have the following installed:
    ```bash
    npm install
    ```
-   or
-   ```bash
-   yarn install
-   ```
 
 3. **Start the Development Server**:
    ```bash
    npm run dev
-   ```
-   or
-   ```bash
-   yarn dev
    ```
 
 4. **View in Browser**:
